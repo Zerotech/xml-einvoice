@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<E_Invoice xsi:noNamespaceSchemaLocation="e-invoice_ver1.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Header>
+		<Date>2013-12-01</Date>
+		<FileId>1</FileId>
+		<Version>1.2</Version>
+	</Header>
+	<Invoice sellerRegnumber="12345678" invoiceId="1234" regNumber="30101011234">
+		<InvoiceParties>
+			<SellerParty>
+				<Name>TESTMÜÜJA AS</Name>
+				<RegNumber>12345678</RegNumber>
+			</SellerParty>
+			<BuyerParty>
+				<Name>TESTOSTJA AS</Name>
+			</BuyerParty>
+		</InvoiceParties>
+		<InvoiceInformation>
+			<Type type="DEB"/>
+			<DocumentName>ARVE</DocumentName>
+			<InvoiceNumber>1234</InvoiceNumber>
+			<InvoiceDate>2013-12-01</InvoiceDate>
+		</InvoiceInformation>
+		<InvoiceSumGroup>
+			<TotalSum>1.20</TotalSum>
+		</InvoiceSumGroup>
+		<InvoiceItem>
+			<InvoiceItemGroup>
+				<ItemEntry>
+					<Description>Ostetud teenus</Description>
+				</ItemEntry>
+			</InvoiceItemGroup>
+		</InvoiceItem>
+		<PaymentInfo>
+			<Currency>EUR</Currency>
+			<PaymentDescription>Arve number 1234</PaymentDescription>
+			<Payable>NO</Payable>
+			<PaymentTotalSum>1.20</PaymentTotalSum>
+			<PayerName>TESTOSTJA AS</PayerName>
+			<PaymentId>1234</PaymentId>
+			<PayToAccount>EE909900123456789012</PayToAccount>
+			<PayToName>TESTMÜÜJA AS</PayToName>
+		</PaymentInfo>
+	</Invoice>
+	<Footer>
+		<TotalNumberInvoices>1</TotalNumberInvoices>
+		<TotalAmount>1.2</TotalAmount>
+	</Footer>
+</E_Invoice>
